@@ -6,3 +6,6 @@ A webpage where pothole data will get updated from Thingspeak cloud. We can use 
 3) JavaScript code does the plotting in the map.
 
 The site will look good both PC/Mobile , but better in PCs.
+
+(Hosted on GitHub pages)
+https://praveenk257.github.io/Pothole-Mapper/
