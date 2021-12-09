@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content = "with = device-width, initial-scale=1.0">
+	<title>Potholes Detection - Map Visualizer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,600;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<body>
+
+	<section class="header">
+		<nav>
+			<a href="index.html"> 
+				<img src="Images/logo-home.png" alttext = "return to home page" width="50" height="50" align="left"> 
+			</a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<div class="neon-text">	
+					<ul>
+						<li> <a href="index.html">HOME</a> </li>
+						<li> <a href="mapVisualizer.html" target="_blank">LIVE MAP</a> </li>
+						<li> <a href="submitData.html">SUBMIT DATA</a> </li>
+						<li> <a href="Contact form\\contactUs.html" target="_blank">CONTACT US</a> </li>
+					</ul>
+				</div>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"> </i>
+		</nav>
+
+		<div class="text-box">
+			<h1> Here you can submit your data</h1>
+			<p> Click on the below button. Fill out the pothole location details in the form. <br>
+				Your data will be validated and updated in the map.<br>
+			</p>
+			<a href="fileSubmission.html" target="_blank" class="intro-Button"> Submit data </a>
+		</div>
+
+	</section>
+
+
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0"; 
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px"; 
+		}
+
+	</script>
+
+
+</body>
+
+</html>
